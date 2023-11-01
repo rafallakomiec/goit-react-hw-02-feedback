@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 class App extends Component {
   state = {
@@ -20,12 +20,12 @@ class App extends Component {
       return { good: state.good + 1 };
     });
   };
-  addNeutral = event => {
+  addNeutral = () => {
     this.setState(state => {
       return { neutral: state.neutral + 1 };
     });
   };
-  addBad = event => {
+  addBad = () => {
     this.setState(state => {
       return { bad: state.bad + 1 };
     });
